@@ -106,3 +106,6 @@ complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/terraform/1.5.4/bin/ter
 
 alias k="kubectl"
 alias tf="terraform"
+
+sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && minikube start && omz update
+
