@@ -97,3 +97,12 @@ cat /dev/null > ~/.bash_history
 cat /dev/null > ~/.bash_history && history -c && exit
 cat /dev/null > ~/.zsh_history
 cat /dev/null > ~/.zsh_history && history -c && exit
+
+
+# save for later ########################## (backup)
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /home/linuxbrew/.linuxbrew/Cellar/terraform/1.5.4/bin/terraform terraform
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
+alias k="kubectl"
+alias tf="terraform"
